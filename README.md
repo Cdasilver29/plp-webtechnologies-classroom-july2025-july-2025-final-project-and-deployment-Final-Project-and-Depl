@@ -1,90 +1,71 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# Calvine Dasilver - Portfolio Website
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+A responsive, modern, and professional portfolio website showcasing my skills and projects as a Data Scientist and Software Developer.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+## 🚀 Live Demo
 
----
+[View the live website here](https://cdasilver29.github.io/portfolio) <!-- Replace with your actual deployment URL -->
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+## 📁 Project Structure
+portfolio-website/
+├── index.html
+├── about.html
+├── projects.html
+├── resume.html
+├── contact.html
+├── README.md
+├── assets/
+│ ├── css/
+│ │ └── style.css
+│ ├── js/
+│ │ └── script.js
+│ └── images/
+└── docs/
+└── CALVINE-DASILVER-MUGUNDA-Resume.pdf
 
-Before you write any code, take time to plan:
+text
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+## 🛠️ Built With
 
-**Goal:** Show intentional structure and user journey across the site.
+- **HTML5** - For semantic structure
+- **CSS3** - For styling, animations, and responsive design (Flexbox, Grid)
+- **JavaScript (ES6)** - For interactivity (mobile menu, typewriter effect, scroll animations)
+- **Font Awesome** - For icons
 
----
+## ✨ Features
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+- **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile.
+- **Modern UI/UX** - Clean design with a professional color scheme.
+- **Interactive Elements**:
+  - Mobile-friendly hamburger menu
+  - Typewriter effect on the hero section
+  - Smooth scrolling and scroll reveal animations
+  - Hover effects on buttons and project cards
+- **Multi-page Layout** - Home, About, Projects, Resume, and Contact pages.
+- **Performance Optimized** - Clean and efficient code.
 
-Using your plan, begin building:
+## 📄 Pages
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+1.  **Home:** Introduction with a call-to-action.
+2.  **About:** Detailed professional summary and background.
+3.  **Projects:** Showcase of key data science and software projects with links to code.
+4.  **Resume:** Online version of my CV with a downloadable PDF link.
+5.  **Contact:** Functional contact form and direct contact information.
 
-Each page should:
+## 🌐 Deployment
 
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
+This site is deployed using **GitHub Pages**. The deployment is automated from the `main` branch.
 
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+To deploy your own copy:
+1.  Fork this repository.
+2.  Go to repository **Settings** > **Pages**.
+3.  Select the source branch as `main` (or `gh-pages` if you prefer).
+4.  Your site will be published at `https://<your-username>.github.io/<repository-name>`
 
----
+## 📧 Contact
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+Calvine Dasilver Mugunda - [Calvinedasilver96@gmail.com](mailto:Calvinedasilver96@gmail.com)
 
-Before deployment, refactor your project to follow production-friendly practices:
+LinkedIn: [https://linkedin.com/in/calvine-dasilver-047849188/](https://linkedin.com/in/calvine-dasilver-047849188/)
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
-
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
-
----
-
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
-
-Once your project is complete, choose a method to **host your site online**.
-
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
-
----
-
-## Deliverables
-
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
-
----
-
-## Outcome
-
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+GitHub: [https://github.com/Cdasilver29](https://github.com/Cdasilver29)

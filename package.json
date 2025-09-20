@@ -1,0 +1,190 @@
+{
+  "name": "calvine-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Calvine Dasilver Mugunda - Data Scientist, MLOps Engineer, and Software Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000 || python3 -m http.server 8000",
+    "serve": "npx http-server -p 8000 -c-1",
+    "build": "npm run minify && npm run optimize",
+    "minify": "npm run minify:html && npm run minify:css && npm run minify:js",
+    "minify:html": "html-minifier --input-dir . --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-css --minify-js",
+    "minify:css": "cleancss -o dist/assets/css/style.min.css assets/css/style.css",
+    "minify:js": "uglifyjs assets/js/script.js -o dist/assets/js/script.min.js -c -m",
+    "optimize": "npm run optimize:images",
+    "optimize:images": "imagemin 'assets/images/*.{jpg,png,gif,svg}' --out-dir=dist/assets/images",
+    "validate": "npm run validate:html && npm run validate:css && npm run lint:js",
+    "validate:html": "html-validate index.html",
+    "validate:css": "stylelint 'assets/css/*.css'",
+    "lint:js": "eslint assets/js/script.js",
+    "lighthouse": "lighthouse http://localhost:8000 --output html --output-path ./reports/lighthouse-report.html --chrome-flags='--headless'",
+    "test": "npm run validate && npm run lighthouse",
+    "deploy": "npm run build && npm run deploy:gh-pages",
+    "deploy:gh-pages": "gh-pages -d dist",
+    "dev": "npm run serve",
+    "format": "prettier --write '*.{html,css,js,json,md}'",
+    "analyze": "bundlesize",
+    "security": "nsp check"
+  },
+  "keywords": [
+    "portfolio",
+    "data-science",
+    "machine-learning",
+    "mlops",
+    "software-development",
+    "web-development",
+    "javascript",
+    "html5",
+    "css3",
+    "responsive-design",
+    "personal-website"
+  ],
+  "author": {
+    "name": "Calvine Dasilver Mugunda",
+    "email": "Calvinedasilver96@gmail.com",
+    "url": "https://github.com/Cdasilver29"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cdasilver29/portfolio-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cdasilver29/portfolio-website/issues"
+  },
+  "homepage": "https://cdasilver29.github.io/portfolio-website",
+  "devDependencies": {
+    "html-minifier": "^4.0.0",
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4",
+    "lighthouse": "^10.4.0",
+    "html-validate": "^8.7.4",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "eslint": "^8.52.0",
+    "prettier": "^3.0.3",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "gh-pages": "^6.0.0",
+    "bundlesize": "^0.18.1",
+    "http-server": "^14.1.1"
+  },
+  "bundlesize": [
+    {
+      "path": "assets/css/style.css",
+      "maxSize": "50kb"
+    },
+    {
+      "path": "assets/js/script.js",
+      "maxSize": "30kb"
+    }
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ]
+}
+
+# ==========================================
+# .eslintrc.json (ESLint configuration)
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", 4],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "no-debugger": "warn",
+    "prefer-const": "error",
+    "no-var": "error",
+    "arrow-spacing": "error",
+    "comma-dangle": ["error", "never"],
+    "eol-last": "error",
+    "no-multiple-empty-lines": ["error", { "max": 2 }],
+    "object-curly-spacing": ["error", "always"],
+    "space-before-function-paren": ["error", "never"]
+  },
+  "globals": {
+    "console": "readonly",
+    "window": "readonly",
+    "document": "readonly",
+    "localStorage": "readonly",
+    "performance": "readonly",
+    "IntersectionObserver": "readonly",
+    "PerformanceObserver": "readonly",
+    "CustomEvent": "readonly",
+    "FormData": "readonly",
+    "requestAnimationFrame": "readonly"
+  }
+}
+
+# ==========================================
+# .stylelintrc.json (Stylelint configuration)
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "indentation": 4,
+    "string-quotes": "single",
+    "no-duplicate-selectors": true,
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "color-named": "never",
+    "selector-combinator-space-after": "always",
+    "selector-attribute-quotes": "always",
+    "selector-attribute-operator-space-before": "never",
+    "selector-attribute-operator-space-after": "never",
+    "selector-attribute-brackets-space-inside": "never",
+    "declaration-block-trailing-semicolon": "always",
+    "declaration-no-important": true,
+    "declaration-colon-space-before": "never",
+    "declaration-colon-space-after": "always",
+    "number-leading-zero": "always",
+    "function-url-quotes": "always",
+    "font-family-name-quotes": "always-where-recommended",
+    "comment-whitespace-inside": "always",
+    "rule-empty-line-before": "always-multi-line",
+    "selector-pseudo-element-colon-notation": "double",
+    "selector-pseudo-class-parentheses-space-inside": "never",
+    "media-feature-range-operator-space-before": "always",
+    "media-feature-range-operator-space-after": "always",
+    "media-feature-parentheses-space-inside": "never",
+    "media-feature-colon-space-before": "never",
+    "media-feature-colon-space-after": "always"
+  }
+}
+
+# ==========================================
+# .prettierrc.json (Prettier configuration)
+{
+  "printWidth": 100,
+  "tabWidth": 4,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "quoteProps": "as-needed",
+  "jsxSingleQuote": true,
+  "trailingComma": "none",
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "arrowParens": "avoid",
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "proseWrap": "preserve"
+}

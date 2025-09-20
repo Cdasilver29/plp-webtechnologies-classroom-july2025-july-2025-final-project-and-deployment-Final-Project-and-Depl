@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calvine Dasilver Mugunda - Data Scientist, MLOps Engineer, and Software Developer. Transforming data into actionable insights.">
+    <meta name="keywords" content="Data Science, Machine Learning, MLOps, Software Development, Python, AI">
+    <meta name="author" content="Calvine Dasilver Mugunda">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Calvine Dasilver | Data Scientist & MLOps Engineer">
+    <meta property="og:description" content="Professional portfolio showcasing expertise in Data Science, Machine Learning, and Software Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cdasilver29.github.io/portfolio-website">
+    <meta property="og:image" content="./assets/images/profile.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calvine Dasilver | Data Scientist & MLOps Engineer">
+    <meta name="twitter:description" content="Professional portfolio showcasing expertise in Data Science, Machine Learning, and Software Development">
+    <meta name="twitter:image" content="./assets/images/profile.jpg">
+    
+    <title>Calvine Dasilver | Data Scientist & MLOps Engineer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Calvine<span>.Dev</span></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Welcome to my world</p>
+                <h1 class="hero-title">Calvine Dasilver Mugunda</h1>
+                <p class="hero-description">
+                    I'm a passionate <span class="typewriter" data-words='["Data Scientist", "MLOps Engineer", "Software Developer", "AI Enthusiast"]'></span> 
+                    who transforms data into actionable insights and builds intelligent solutions that make a difference.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="./assets/images/profile.jpg" alt="Calvine Dasilver Mugunda" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-placeholder" style="display: none;">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/calvine-dasilver-047849188/" target="_blank" class="social-link" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Cdasilver29" target="_blank" class="social-link" aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:Calvinedasilver96@gmail.com" class="social-link" aria-label="Email Contact">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://twitter.com/yourusername" target="_blank" class="social-link" aria-label="Twitter Profile">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-card">
+                        <div class="about-visual">
+                            <i class="fas fa-brain"></i>
+                            <h4>Data-Driven Problem Solver</h4>
+                            <p>Transforming complex data into simple, actionable insights</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <h3>Passionate About Data Science & AI</h3>
+                    <p>
+                        I'm a dedicated Data Scientist and MLOps Engineer with a strong foundation in machine learning, 
+                        data analysis, and software development. My journey in data science has been driven by curiosity 
+                        and the desire to solve real-world problems using data-driven approaches.
+                    </p>
+                    <p>
+                        With expertise in Python, machine learning algorithms, and cloud technologies, I specialize in 
+                        building end-to-end ML solutions that bridge the gap between data science and production systems. 
+                        I'm passionate about creating intelligent applications that make a positive impact on society.
+                    </p>
+                    <p>
+                        When I'm not analyzing data or building models, you'll find me contributing to open-source projects, 
+                        learning about the latest AI technologies, or mentoring aspiring data scientists.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>Machine Learning</h4>
+                    <p>Scikit-learn, TensorFlow, PyTorch, XGBoost, Deep Learning</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Data Analysis</h4>
+                    <p>Pandas, NumPy, Matplotlib, Seaborn, Statistical Analysis</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h4>MLOps & Cloud</h4>
+                    <p>Docker, AWS, MLflow, Kubernetes, CI/CD Pipelines</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Programming</h4>
+                    <p>Python, SQL, JavaScript, Git, REST APIs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects-container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1: Tanzania Water Wells -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="./assets/images/water-wells-project.jpg" alt="Tanzania Water Wells Project" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-placeholder" style="display: none;">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tanzania Water Wells Prediction</h3>
+                        <p>
+                            Engineered an end-to-end ML solution using Random Forest to predict water well functionality 
+                            with 85% accuracy. Built a web application to help NGOs optimize resource deployment for 
+                            water infrastructure projects.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Random Forest</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Data Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Cdasilver29/tanzania-water-wells" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: LSETF Hackathon -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="./assets/images/lsetf-project.jpg" alt="LSETF Applicant Selection Tool" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-placeholder" style="display: none;">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Driven Applicant Selection Tool</h3>
+                        <p>
+                            Developed an intelligent recruitment system using ML and NLP for the LSETF PLP Nigeria Hackathon. 
+                            The solution reduced manual screening time by 60% and improved candidate matching accuracy.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Cdasilver29/lsetf-hackathon" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Diabetes Analysis -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="./assets/images/diabetes-project.jpg" alt="Diabetes Health Indicators Analysis" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-placeholder" style="display: none;">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Diabetes Health Indicators Analysis</h3>
+                        <p>
+                            Comprehensive data analysis project exploring patterns in diabetes health indicators dataset. 
+                            Performed extensive EDA, statistical analysis, and created interactive visualizations to 
+                            uncover insights into public health trends.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Seaborn</span>
+                            <span class="tech-tag">Jupyter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Cdasilver29/Diabetes-Health-Indicators-Data-Analysis.git" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Portfolio Website -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="./assets/images/portfolio-project.jpg" alt="Portfolio Website" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-placeholder" style="display: none;">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Professional Portfolio Website</h3>
+                        <p>
+                            Modern, responsive portfolio website built with vanilla HTML, CSS, and JavaScript. 
+                            Features smooth animations, dark/light theme toggle, and optimized performance 
+                            for professional presentation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Cdasilver29/portfolio-website" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Site
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- View All Projects Button -->
+            <div class="projects-cta">
+                <a href="https://github.com/Cdasilver29" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i>
+                    View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <p class="contact-subtitle reveal">
+                Ready to collaborate on your next data science project? Let's discuss how we can work together 
+                to turn your data into actionable insights.
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:Calvinedasilver96@gmail.com">
+                                Calvinedasilver96@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/calvine-dasilver-047849188/" target="_blank">
+                                calvine-dasilver-047849188
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/Cdasilver29" target="_blank">
+                                github.com/Cdasilver29
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Resume</h4>
+                            <a href="./docs/CALVINE-DASILVER-MUGUNDA-Resume.pdf" target="_blank">
+                                Download PDF Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form reveal">
+                    <h3>Send me a message</h3>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" required 
+                                placeholder="Tell me about your project or how we can collaborate..."></textarea>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/calvine-dasilver-047849188/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Cdasilver29" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:Calvinedasilver96@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p class="footer-copyright">&copy; 2025 Calvine Dasilver Mugunda. All rights reserved.</p>
+            <p class="footer-built">Built with ❤️ using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
