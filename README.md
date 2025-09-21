@@ -1,6 +1,6 @@
 # 🚀 Calvine Dasilver Mugunda - Portfolio Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-site-id/deploy-status)](https://app.netlify.com/sites/your-site-name/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-site-id/deploy-status)](https://app.netlify.com/sites/https://calvinedasilverwebportfolio.netlify.app/deploys)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Cdasilver29/portfolio-website)](https://github.com/Cdasilver29/portfolio-website/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/Cdasilver29/portfolio-website)](https://github.com/Cdasilver29/portfolio-website)
 [![Lighthouse Score](https://img.shields.io/badge/Lighthouse-95%2B-brightgreen)](https://developers.google.com/web/tools/lighthouse)
@@ -10,11 +10,11 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
-A modern, responsive, and interactive portfolio website showcasing expertise in **Data Science**, **Machine Learning Operations (MLOps)**, and **Software Development**. Built with performance, accessibility, and user experience in mind.
+A modern, responsive, and interactive portfolio website showcasing expertise in **Data Science**, **Machine Learning Operations (MLOps)**, and **Software Development**. Built with pure web technologies for maximum performance and simplicity.
 
 ## 🌐 Live Demo
 
-**🔗 [View Live Website](https://calvine-portfolio.netlify.app)** *(Update with your actual Netlify URL)*
+**🔗 [View Live Website](https://calvinedasilverwebportfolio.netlify.app/)** 
 
 ## 📸 Screenshots
 
@@ -37,7 +37,7 @@ A modern, responsive, and interactive portfolio website showcasing expertise in 
 - **Fast Loading**: Optimized assets, lazy loading, efficient code structure
 - **SEO Optimized**: Meta tags, semantic HTML5, structured data
 - **Cross-Browser**: Compatible with Chrome, Firefox, Safari, Edge
-- **Progressive Enhancement**: Works with JavaScript disabled
+- **Zero Build Process**: Pure static files for instant deployment
 
 ### ♿ **Accessibility**
 - **WCAG 2.1 Compliant**: Proper contrast ratios, focus indicators
@@ -47,26 +47,27 @@ A modern, responsive, and interactive portfolio website showcasing expertise in 
 
 ### 🔧 **Developer Experience**
 - **Clean Code**: Well-organized, commented, and maintainable
-- **No Frameworks**: Pure HTML, CSS, JavaScript for maximum performance
+- **No Dependencies**: Pure HTML, CSS, JavaScript - no build tools required
 - **Modern CSS**: Grid, Flexbox, Custom Properties, Container Queries
-- **ES6+ JavaScript**: Modern syntax, async/await, modules ready
+- **ES6+ JavaScript**: Modern syntax, efficient code structure
 
 ## 🛠 Tech Stack
 
-| Technology | Purpose | Version |
-|------------|---------|---------|
-| **HTML5** | Semantic markup and structure | Latest |
-| **CSS3** | Styling, animations, responsive design | Latest |
-| **JavaScript** | Interactive functionality | ES6+ |
-| **Netlify** | Hosting and deployment | - |
-| **Git** | Version control | Latest |
+| Technology | Purpose | Approach |
+|------------|---------|----------|
+| **HTML5** | Semantic markup and structure | Pure, no frameworks |
+| **CSS3** | Styling, animations, responsive design | Modern features, no preprocessors |
+| **JavaScript** | Interactive functionality | Vanilla ES6+, no libraries |
+| **Netlify** | Hosting and deployment | Static site deployment |
+| **Git** | Version control | Standard workflow |
 
 ### 🏗 **Architecture Highlights**
+- **Static Site**: No build process, instant deployment
 - **Mobile-First CSS**: Progressive enhancement from mobile to desktop
 - **CSS Custom Properties**: Dynamic theming and consistent design tokens
 - **Intersection Observer API**: Efficient scroll-triggered animations
 - **Local Storage API**: Theme preference persistence
-- **Modular JavaScript**: Organized, reusable code structure
+- **Modular Structure**: Organized, maintainable code
 
 ## 📁 Project Structure
 
@@ -74,15 +75,13 @@ A modern, responsive, and interactive portfolio website showcasing expertise in 
 portfolio-website/
 ├── 📄 index.html                # Main HTML document
 ├── 📄 README.md                 # Project documentation
-├── 📄 .gitignore               # Git ignore configuration
-├── 📄 package.json             # Project metadata and scripts
-├── 📄 netlify.toml             # Netlify deployment configuration
+├── 📄 .gitignore               # Git ignore rules
 │
 ├── 📂 assets/                  # Static assets
 │   ├── 📂 css/
-│   │   └── 📄 style.css       # Complete stylesheet (15KB)
+│   │   └── 📄 style.css       # Complete stylesheet (~15KB)
 │   ├── 📂 js/
-│   │   └── 📄 script.js       # Interactive features (12KB)
+│   │   └── 📄 script.js       # Interactive features (~12KB)
 │   └── 📂 images/             # Optimized images
 │       ├── 🖼 profile.jpg     # Profile picture (< 200KB)
 │       ├── 🖼 project1.jpg    # Project screenshots
@@ -102,52 +101,34 @@ portfolio-website/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Cdasilver29/portfolio-website.git
-cd portfolio-website
+git clone https://github.com/Cdasilver29/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
+cd plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
+
 ```
-
-### 2. Local Development
-```bash
-# Method 1: Python (most common)
-python -m http.server 8000
-# or
-python3 -m http.server 8000
-
-# Method 2: Node.js
-npx http-server -p 8000 -c-1
-
-# Method 3: VS Code Live Server
-# Install "Live Server" extension and right-click index.html
-
-# Visit: http://localhost:8000
-```
-
-### 3. Customization
-1. **Personal Information**: Update content in `index.html`
-2. **Profile Picture**: Replace `assets/images/profile.jpg`
-3. **Projects**: Update project links and descriptions
-4. **Resume**: Replace `docs/resume.pdf` with your resume
-5. **Colors**: Modify CSS custom properties in `style.css`
-6. **Social Links**: Update LinkedIn, GitHub, email links
 
 ## 🌐 Deployment
 
-### Netlify (Recommended)
-1. **Fork this repository** to your GitHub account
-2. **Connect to Netlify**:
-   - Go to [netlify.com](https://netlify.com)
-   - Click "New site from Git"
-   - Select your forked repository
-3. **Deploy Settings**:
-   - Build command: `(leave empty)`
-   - Publish directory: `.` (root)
-4. **Auto-Deploy**: Pushes to `main` branch auto-deploy
+### Netlify (Current Setup)
+**✅ Ultra-Simple Deployment Process:**
 
-### Alternative Hosting
-- **GitHub Pages**: Enable in repository settings
-- **Vercel**: Import repository to Vercel
-- **Firebase Hosting**: Use Firebase CLI
-- **Traditional Hosting**: Upload files via FTP
+1. **Push to GitHub**: Your repository is connected
+2. **Auto-Deploy**: Netlify detects changes and deploys automatically
+3. **No Configuration**: Works with default settings
+4. **Instant SSL**: HTTPS enabled automatically
+5. **Global CDN**: Fast loading worldwide
+
+**Deploy Settings:**
+```
+Build command: (empty - no build needed)
+Publish directory: . (root directory)
+Deploy branch: main
+```
+
+### Alternative Hosting Options
+- **GitHub Pages**: Enable in repository settings → Pages
+- **Vercel**: Import repository, zero configuration needed
+- **Firebase Hosting**: `firebase deploy` after setup
+- **Traditional Hosting**: Upload files via FTP (any web host)
 
 ## 📊 Performance Metrics
 
@@ -157,17 +138,17 @@ npx http-server -p 8000 -c-1
 - ✅ **Best Practices**: 100
 - 🔍 **SEO**: 95+
 
-### Bundle Size
-- 📦 **Total Size**: ~50KB (excluding images)
-- 🎨 **CSS**: ~15KB
-- ⚡ **JavaScript**: ~12KB
+### Bundle Size (Optimized)
+- 📦 **Total Size**: ~30KB (excluding images)
+- 🎨 **CSS**: ~15KB (compressed)
+- ⚡ **JavaScript**: ~12KB (compressed)
 - 🖼 **Images**: Optimized < 200KB each
 
-### Loading Metrics
+### Loading Performance
 - 📱 **First Contentful Paint**: < 1.2s
 - 🎨 **Largest Contentful Paint**: < 2.5s
 - 📏 **Cumulative Layout Shift**: < 0.1
-- ⚡ **Time to Interactive**: < 3s
+- ⚡ **Time to Interactive**: < 2s
 
 ## 🎨 Customization Guide
 
@@ -181,12 +162,33 @@ Update CSS custom properties in `assets/css/style.css`:
 }
 ```
 
-### Adding New Sections
-1. Add HTML structure to `index.html`
-2. Add corresponding styles to `style.css`
-3. Add JavaScript interactions to `script.js`
-4. Update navigation links
+### Popular Color Schemes
+- **Professional Blue**: `#667eea` to `#764ba2`
+- **Tech Green**: `#11998e` to `#38ef7d`
+- **Creative Purple**: `#8360c3` to `#2ebf91`
+- **Energy Orange**: `#ff9a56` to `#ffad56`
 
+### Adding New Projects
+Replace project data in the projects section of `index.html`:
+```html
+<article class="project-card">
+    <div class="project-image">
+        <img src="assets/images/your-project.jpg" alt="Your Project">
+    </div>
+    <div class="project-content">
+        <h3>Your Project Title</h3>
+        <p>Your project description...</p>
+        <div class="project-tech">
+            <span class="tech-tag">Technology 1</span>
+            <span class="tech-tag">Technology 2</span>
+        </div>
+        <div class="project-links">
+            <a href="your-github-link" target="_blank">GitHub</a>
+            <a href="your-demo-link" target="_blank">Live Demo</a>
+        </div>
+    </div>
+</article>
+```
 
 ## 🧪 Testing
 
@@ -201,46 +203,62 @@ Update CSS custom properties in `assets/css/style.css`:
 - ✅ Tablet (768x1024, 1024x768)
 - ✅ Mobile (375x667, 414x896, 360x640)
 
-### Accessibility Testing
+### Performance Testing
 ```bash
-# Run accessibility audit
-npx lighthouse http://localhost:8000 --only-categories=accessibility
+# Using Lighthouse CLI (if Node.js installed)
+npx lighthouse http://localhost:8000
 
-# Manual testing checklist
-- [ ] Keyboard navigation works
-- [ ] Screen reader compatibility
-- [ ] Color contrast ratios meet WCAG AA
-- [ ] Focus indicators visible
-- [ ] Alt text for all images
+# Online testing tools
+# - PageSpeed Insights: https://pagespeed.web.dev/
+# - GTmetrix: https://gtmetrix.com/
+# - WebPageTest: https://www.webpagetest.org/
 ```
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read the contribution guidelines:
+Contributions are welcome! Here's how you can help:
 
 1. **Fork** the repository
 2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
+3. **Test** your changes on multiple devices
+4. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+5. **Push** to the branch (`git push origin feature/amazing-feature`)
+6. **Open** a Pull Request
 
 ### Development Guidelines
-- Follow existing code style and conventions
+- Maintain the no-build philosophy
 - Test on multiple browsers and devices
+- Follow existing code style and conventions
 - Ensure accessibility standards are met
-- Update documentation for new features
-- Keep commits focused and descriptive
+- Keep performance optimized
 
-## 🔧 Available Scripts
+## ⚡ Why No Build Tools?
 
-```json
-{
-  "start": "python -m http.server 8000",
-  "serve": "npx http-server -p 8000 -c-1",
-  "lighthouse": "npx lighthouse http://localhost:8000",
-  "validate": "echo 'Use https://validator.w3.org/ for HTML validation'",
-  "format": "npx prettier --write '*.{html,css,js,json,md}'"
-}
+This portfolio intentionally avoids build tools and frameworks because:
+
+- ✅ **Faster Development**: Write code, refresh browser, see changes
+- ✅ **Better Performance**: No framework overhead, smaller bundle size
+- ✅ **Universal Compatibility**: Works everywhere, no compilation needed
+- ✅ **Learning Focus**: Pure web technologies, transferable skills
+- ✅ **Deployment Simplicity**: Upload files anywhere, works immediately
+- ✅ **Future-Proof**: HTML/CSS/JS will work for decades
+
+## 🔧 Available Development Commands
+
+Since this is a static site, you only need simple local servers:
+
+```bash
+# Python (most systems have this)
+python -m http.server 8000
+
+# Node.js (if you have it)
+npx http-server -p 8000
+
+# PHP (if available)
+php -S localhost:8000
+
+# Live Server (VS Code extension)
+# Right-click index.html → "Open with Live Server"
 ```
 
 ## 📄 License
@@ -253,7 +271,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Icons**: [Font Awesome](https://fontawesome.com/) for beautiful iconography  
 - **Fonts**: [Google Fonts](https://fonts.google.com/) (Inter family)
 - **Hosting**: [Netlify](https://netlify.com) for seamless deployment
-- **Community**: Developer community for feedback and inspiration
+
 
 ## 📞 Contact & Connect
 
@@ -263,8 +281,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 📧 **Email**: [Calvinedasilver96@gmail.com](mailto:Calvinedasilver96@gmail.com)
 - 💼 **LinkedIn**: [calvine-dasilver-047849188](https://linkedin.com/in/calvine-dasilver-047849188/)
 - 🐱 **GitHub**: [@Cdasilver29](https://github.com/Cdasilver29)
-- 🌐 **Portfolio**: [Live Website](https://calvine-portfolio.netlify.app)
-- 📄 **Resume**: [Download PDF](./docs/CALVINE-DASILVER-MUGUNDA-Resume.pdf)
+- 🌐 **Portfolio**: [Live Website](https://calvinedasilverwebportfolio.netlify.app/)
+- 📄 **Resume**: [Download PDF](./docs/resume.pdf)
 
 ---
 
@@ -275,6 +293,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [![GitHub stars](https://img.shields.io/github/stars/Cdasilver29/portfolio-website?style=social)](https://github.com/Cdasilver29/portfolio-website/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Cdasilver29/portfolio-website?style=social)](https://github.com/Cdasilver29/portfolio-website/network/members)
 
-
+*Built with Ease using pure web technologies*  
+*No frameworks • No build tools • No complexity*
 
 </div>
