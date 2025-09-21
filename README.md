@@ -187,27 +187,6 @@ Update CSS custom properties in `assets/css/style.css`:
 3. Add JavaScript interactions to `script.js`
 4. Update navigation links
 
-### Project Showcase
-Replace project data in the projects section:
-```html
-<article class="project-card">
-    <div class="project-image">
-        <img src="assets/images/your-project.jpg" alt="Your Project">
-    </div>
-    <div class="project-content">
-        <h3>Your Project Title</h3>
-        <p>Your project description...</p>
-        <div class="project-tech">
-            <span class="tech-tag">Your</span>
-            <span class="tech-tag">Technologies</span>
-        </div>
-        <div class="project-links">
-            <a href="your-github-link">GitHub</a>
-            <a href="your-demo-link">Live Demo</a>
-        </div>
-    </div>
-</article>
-```
 
 ## 🧪 Testing
 
