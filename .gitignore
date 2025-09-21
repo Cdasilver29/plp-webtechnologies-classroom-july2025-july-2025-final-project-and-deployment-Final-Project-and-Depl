@@ -103,3 +103,88 @@ temp/
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# ==========================================
+# PORTFOLIO-SPECIFIC ADDITIONS
+# ==========================================
+
+# Performance and analysis reports
+lighthouse-report.html
+lighthouse-report.json
+pagespeed-report.html
+bundle-analyzer-report.html
+
+# Image optimization temporary files
+*.tmp.jpg
+*.tmp.png
+*.tmp.webp
+
+# Backup files (when editing)
+*.bak
+*.backup
+*_backup.*
+*_old.*
+
+# Local development files
+.env.development
+.env.staging
+
+# Netlify
+.netlify/
+functions/
+
+# Testing
+test-results/
+playwright-report/
+coverage/
+
+# Documentation drafts
+drafts/
+notes.md
+todo.md
+
+# Personal files (don't commit personal info accidentally)
+personal/
+private/
+secrets/
+
+# Large files that shouldn't be in Git
+*.psd
+*.ai
+*.sketch
+*.fig
+
+# Video files (too large for Git)
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Archive files
+*.zip
+*.rar
+*.tar.gz
+*.7z
+
+# Database files (if you add any later)
+*.db
+*.sqlite
+*.sqlite3
+
+# Local server files
+.python-version
+__pycache__/
+*.pyc
+
+# Editor-specific settings (keep personal settings out)
+.vscode/settings.json
+.vscode/launch.json
+
+# Ignore large raw image sources (keep optimized versions only)
+raw-images/
+original-images/
+unoptimized/
+
+# Ignore any API keys or sensitive config
+config/secrets.json
+.credentials
