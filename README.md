@@ -19,8 +19,8 @@ A modern, responsive, and interactive portfolio website showcasing expertise in 
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="assets/images/screenshot-desktop.png" alt="Desktop View" width="45%" /> **DESKTOP VIEW**
-  <img src="assets/images/screenshot-mobile.png" alt="Mobile View" width="45%" /> **MOBILE VIEW**
+  <img src="assets/images/screenshot-desktop.png" alt="Desktop View" width="45%" /> DESKTOP VIEW
+  <img src="assets/images/screenshot-mobile.png" alt="Mobile View" width="45%" /> MOBILE VIEW
 </div>
 
 ## ✨ Key Features
